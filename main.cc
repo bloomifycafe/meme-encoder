@@ -102,10 +102,11 @@ int main(int, char**) {
                     c ^= char(*it2 >> (8 * j));
             }
             if ((unsigned char)c < 0x80)
-                ss << c;
+                std::cout << c;
         }
     }
-})";
+}
+)";
     auto s = ss.str();
     std::cout << "---------------------------------------------------------------------------------------------------------" << std::endl << std::endl;
     std::cout << s << std::endl;
