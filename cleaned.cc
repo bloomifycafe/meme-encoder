@@ -6,7 +6,7 @@
 
 /*
  * Function: encode
- * Arguments: std::string original, u8 offset, string xor_key
+ * Arguments: string original, u8 offset, string xor_key
  * Returns: vector<int> of padded encoded string
  */
 std::vector<uint32_t> encode(std::string orig, uint8_t offset, std::string key)
